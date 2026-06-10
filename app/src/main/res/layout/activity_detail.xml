@@ -5,56 +5,46 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".MainActivity">
+    android:background="#B1ABAB"
+    tools:context=".DetailActivity">
 
     <TextView
-        android:id="@+id/tvAppName"
+        android:id="@+id/tvList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Campsite_Commander"
-        android:textStyle="bold"
+        android:text="@string/Display_the_full_list"
         android:textSize="35sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
+        app:layout_constraintVertical_bias="0.219" />
 
-    <com.google.android.material.progressindicator.CircularProgressIndicator
-        android:id="@+id/circularProgressIndicator"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
-        android:indeterminate="true"
-        app:indicatorColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.878"
-        app:trackColor="@android:color/holo_green_dark" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="363dp"
-        android:layout_height="271dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/campsite" />
-
-    <TextView
-        android:id="@+id/tvSubTitle"
+    <Button
+        android:id="@+id/btnDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_to_the_forest_goodies"
+        android:text="@string/Detailed_List"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
+        app:layout_constraintVertical_bias="0.455" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Back_to_Base"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.628" />
 </androidx.constraintlayout.widget.ConstraintLayout>

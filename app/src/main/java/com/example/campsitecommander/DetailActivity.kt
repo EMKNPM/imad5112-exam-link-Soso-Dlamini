@@ -1,35 +1,51 @@
 package com.example.campsitecommander
 
-import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import kotlinx.coroutines.android.HandlerDispatcher
 
-class MainActivity : AppCompatActivity() {
+class DetailActivity : AppCompatActivity() {
+
+    //Declaration
+
+    private lateinit var tvList : TextView
+    private lateinit var btnDetails: Button
+    private lateinit var btnBack : Button
+
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_detail)
 
-        //Handler is used t display the next action
-        Handler(Looper.getMainLooper()).postDelayed({
+        //typecasting
+        tvList = findViewById(R.id.tvList)
+        btnDetails= findViewById(R.id.btnDetails)
+        btnBack = findViewById(R.id.btnBack)
 
 
-            //create an intent to move from one activity to the home activity
-            val intent = Intent( this, HomeScreen::class.java)
-            startActivity(intent)
+        btnDetails.setOnClickListener {
 
-        },3000)// 3000 milliseconds = 3 seconds
+        }
+        btnBack.setOnClickListener {
+            finish()
+        }
+
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
     }
 }

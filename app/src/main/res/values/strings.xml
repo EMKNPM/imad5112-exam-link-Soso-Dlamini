@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Campsite Commander</string>
     <string name="Campsite_Commander">Campsite Commander</string>
+    <string name="welcome_to_the_forest_goodies">Welcome to the forest goodies</string>
+    <string name="camping_gears">Camping Gears</string>
+    <string name="Display_the_comments">Display the comments</string>
+    <string name="Please_enter_number_of_purchase">Please enter number of purchase</string>
+    <string name="Please_enter_the_items_name">Please enter the items name</string>
+    <string name="please_dislay_the_list">Please dislay the list</string>
+    <string name="add_the_gears">Add the gears</string>
+    <string name="number">number</string>
+    <string name="Display_the_full_list">Display the full list</string>
+    <string name="Detailed_List">Detailed list</string>
+    <string name="Back_to_Base">Back to Base</string>
 </resources>
